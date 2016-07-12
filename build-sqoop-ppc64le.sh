@@ -26,4 +26,4 @@ TEZ_VERSION="0.7.1-SNAPSHOT"
 ZOOKEEPER_VERSION="3.4.6"
 
 ant -f build.xml -Dhadoopversion=210 -Dhadoop.version.full=$HADOOP_VERSION -Dhadoop.version=$HADOOP_VERSION -Dhbase.version=$HBASE_VERSION -Dzookeeper.version=$ZOOKEEPER_VERSION package jar "$@"
-
+mvn install:install-file -Dfile=build/sqoop-1.4.6.jar -DgroupId=org.apache.sqoop -DartifactId=sqoop -Dversion=1.4.6 -Dpackaging=jar 
