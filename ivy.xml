@@ -193,6 +193,8 @@ under the License.
       conf="avro->default;redist->default">
       <exclude org="com.twitter" module="parquet-hive-bundle"/>
     </dependency>
+    <dependency org="org.xerial.snappy" name="snappy-java" rev="1.1.1" 
+      conf="common->default;redist->default"/>
 
     <!-- dependencies for static analysis -->
     <dependency org="checkstyle" name="checkstyle" rev="${checkstyle.version}"
